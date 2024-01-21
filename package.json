@@ -4,9 +4,12 @@
   "description": "Stable Diffusion web UI",
   "scripts": {
     "preinstall": "wget -q https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh",
-    "start": "./webui.sh --skip-torch-cuda-test --precision full --no-half --use-cpu all"
+    "start": "./webui.sh --skip-torch-cuda-test --precision full --no-half --use-cpu all",
+    "lint": "eslint .",
+    "fix": "eslint --fix ."
   },
   "dependencies": {
-    "hop": "^1.0.0"
+    "hop": "^1.0.0",
+    "eslint": "^8.40.0"
   }
 }
